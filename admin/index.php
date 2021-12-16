@@ -24,15 +24,18 @@ $page = isset($_REQUEST['page']) ? $_REQUEST['page'] : '';
                 <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">
-                            Blank Page
-                            <small>Subheading</small>
-                        </h1>
 
                         <?php
-                        if($page == 'categories')
+                        switch($page)
                         {
-                            include './includes/views/forms/categories.php';
+                            case 'categories':
+                                include './includes/views/forms/categories.php';
+                                break;
+                            case 'posts':
+                                    include './includes/views/forms/posts.php';
+                                    break;
+
+
                         }
                         ?>
 

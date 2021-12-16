@@ -2,6 +2,10 @@
 require_once './includes/controllers/categories-controller.php';
 
 ?>
+<h1 class="page-header">
+    Manage categories
+    <small>Add, edit or remove categories</small>
+</h1>
 
 <div class="col-xs-6">
     <form action="includes/controllers/categories-controller.php" method="post">
@@ -26,6 +30,8 @@ require_once './includes/controllers/categories-controller.php';
         </div>
     </form>
 </div>
+
+
 <div class="col-xs-6">
     <table class="table table-bordered table-hover">
         <thead>

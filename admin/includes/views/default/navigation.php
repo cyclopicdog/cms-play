@@ -41,14 +41,14 @@
     <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav side-nav">
-            <li>
+            <li class="active">
                 <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
             </li>
             <li>
                 <a href="javascript:;" data-toggle="collapse" data-target="#posts_dropdown"><i class="fa fa-fw fa-arrows-v"></i> Posts <i class="fa fa-fw fa-caret-down"></i></a>
                 <ul id="posts_dropdown" class="collapse">
                     <li>
-                        <a href="#">View all posts</a>
+                        <a href="?page=posts">View all posts</a>
                     </li>
                     <li>
                         <a href="#">Add posts</a>
@@ -63,7 +63,7 @@
                 <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
             </li>
 
-            <li class="active">
+            <li>
                 <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Comments</a>
             </li>
             <li>
