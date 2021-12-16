@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d7231283-9cd0-435e-a2e3-8bd2ae446d28" name="cms play" url="http://udemy-php.test/cms-play/">
+        <fileTransfer mountedRoot="C:\web\udemy-php\cms-play" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>
