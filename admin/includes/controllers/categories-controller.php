@@ -15,11 +15,9 @@ if(isset($_POST['submit']))
 
         $added_data = mysqli_query($connection, $query);
 
-        if(!$added_data)
-        {
-            die("database problem" . mysqli_error($connection));
-        }
-    header("Location: /admin?page=categories");
+        checkConnection($added_data);
+
+        header("Location: /admin?page=categories");
     }
 
 }
@@ -33,10 +31,9 @@ if(isset($_POST['delete']))
                     WHERE `cat_id` = '$cat_id'
                     ";
     $deleted_data = mysqli_query($connection, $delete_query);
-    if(!$deleted_data)
-    {
-        die("database deletion problem" . mysqli_error($connection));
-    }
+
+    checkConnection($deleted_data);
+
     header("Location: /admin?page=categories");
 
 }
@@ -54,10 +51,8 @@ if(isset($_POST['send-edit']))
 
     $edit_data = mysqli_query($connection, $query);
 
-    if(!$edit_data)
-    {
-        die("database problem" . mysqli_error($connection));
-    }
+    checkConnection($edit_data);
+
     header("Location: /admin?page=categories");
 
 }
@@ -70,6 +65,7 @@ function edit($post)
         $cat_id = $_POST['edit'];
         $get_category_query = "SELECT * FROM `categories` WHERE `cat_id` = '$cat_id'";
         $fetched_data = mysqli_query($connection, $get_category_query);
+        checkConnection($fetched_data);
         while ($row = mysqli_fetch_assoc($fetched_data))
         {
             $cat_title = $row['cat_title'];
@@ -78,10 +74,7 @@ function edit($post)
                     <input type='hidden' name='cat_id' value=$cat_id>
                     ";
         }
-        if(!$fetched_data)
-        {
-            die("database deletion problem" . mysqli_error($connection));
-        }
+
     } else {
         echo "<input class='form-control' type='text' name='cat_title' value='Please select category to edit'>";
     }
@@ -93,6 +86,7 @@ function show_categories()
     global $connection;
     $query = "SELECT * FROM `categories`";
     $categories = mysqli_query($connection, $query);
+    checkConnection($categories);
     while($row = mysqli_fetch_assoc($categories))
     {
         $cat_id = $row['cat_id'];

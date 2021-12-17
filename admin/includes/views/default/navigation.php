@@ -51,7 +51,7 @@
                         <a href="?page=posts">View all posts</a>
                     </li>
                     <li>
-                        <a href="#">Add posts</a>
+                        <a href="?page=add-posts">Add posts</a>
                     </li>
                 </ul>
             </li>

@@ -32,8 +32,11 @@ $page = isset($_REQUEST['page']) ? $_REQUEST['page'] : '';
                                 include './includes/views/forms/categories.php';
                                 break;
                             case 'posts':
-                                    include './includes/views/forms/posts.php';
-                                    break;
+                                include './includes/views/forms/posts.php';
+                                break;
+                            case 'add-posts':
+                                include './includes/views/forms/add-posts.php';
+                                break;
 
 
                         }
