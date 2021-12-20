@@ -1,5 +1,9 @@
 <?php
     require_once './includes/controllers/posts-controller.php';
+if(isset($_GET['delete']))
+{
+    deletePost($_GET['delete']);
+}
 ?>
 
 <h1 class="page-header">
@@ -19,6 +23,7 @@
         <th>Tags</th>
         <th>Comments</th>
         <th>Date</th>
+        <th>Actions</th>
     </tr>
     </thead>
     <tbody>
