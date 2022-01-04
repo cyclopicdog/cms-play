@@ -1,6 +1,22 @@
 <?php
 require_once('./includes/db.php');
 
+if(isset($_POST['login']))
+{
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    var_dump("username: " . $username . " | password: " . $password);
+
+    $query = "SELECT * FROM `users` WHERE `username` = $username";
+    $result = mysqli_query($connection, $query);
+
+    while($row = mysqli_fetch_assoc($result))
+    {
+        var_dump();
+    }
+
+}
+
 if(isset($_POST['submit']))
 {
     $search = $_POST['search'];

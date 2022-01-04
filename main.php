@@ -19,7 +19,7 @@ include ('./includes/views/navigation.php');
 
 
             <?php
-            include ('./includes/views/search.php');
+            include('./includes/views/sidebar-controller.php');
 
             ?>
 

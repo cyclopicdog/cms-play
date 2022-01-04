@@ -73,7 +73,7 @@
                         <a href="#">Dropdown Item</a>
                     </li>
                     <li>
-                        <a href="#">Dropdown Item</a>
+                        <a href="?page=add-users">Add users</a>
                     </li>
                 </ul>
             </li>

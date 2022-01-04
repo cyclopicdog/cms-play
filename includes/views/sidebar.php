@@ -3,6 +3,24 @@
 
 <div class="col-md-4">
 
+    <!-- Login -->
+    <div class="well">
+        <h4>Login</h4>
+        <form action="" method="post">
+            <div class="input-group">
+
+                <input name="username" type="text" class="form-control" placeholder="username">
+
+                <input name="password" type="text" class="form-control" placeholder="password">
+                <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit" name="login">
+                                login
+                        </button>
+                        </span>
+            </div>
+        </form>
+    </div>
+
     <!-- Blog Search Well -->
     <div class="well">
         <h4>Blog Search</h4>

@@ -36,6 +36,9 @@ $page = isset($_REQUEST['page']) ? $_REQUEST['page'] : '';
                             case 'add-posts':
                                 include './includes/views/forms/add-posts.php';
                                 break;
+                            case 'add-users':
+                                include './includes/views/forms/add-users.php';
+                                break;
 
                         }
                         ?>
